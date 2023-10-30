@@ -1,3 +1,4 @@
+#3D Object Tracking project
 ##  Work done during the project
 
 1. FP.1 : Match 3D Objects : to match the bounding boxes, I looped over bounding boxes in previuos frame then make sure that each of "matches" keypoints is existed in the box in both previous and current frame and based on that I would increase the number within "count" by one then after looping finish, I would choose the best math based on "count" value.
@@ -13,7 +14,7 @@
     2. FAST,FREAK
     3. SIFT,BRIEF
 
-# SFND 3D Object Tracking
+## Overview of SFND 3D Object Tracking project
 
 Welcome to the final project of the camera course. By completing all the lessons, you now have a solid understanding of keypoint detectors, descriptors, and methods to match them between successive images. Also, you know how to detect objects in an image using the YOLO deep-learning framework. And finally, you know how to associate regions in a camera image with Lidar points in 3D space. Let's take a look at our program schematic to see what we already have accomplished and what's still missing.
 
