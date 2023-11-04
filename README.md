@@ -9,9 +9,7 @@
 <img src="results/lidar_1_error_TTC.jpg" />
 <img src="results/lidar_2_error_TTC.jpg"  />
 
-
-https://github.com/mohamedmajdi/3D-Object-Tracking/assets/69417860/9a56aaf6-2aeb-4070-ace4-6fb6b45d3356
-
+https://github.com/mohamedmajdi/3D-Object-Tracking/assets/69417860/6652c2cd-e1cd-42bf-9e5a-557cc26039e1
 
 6. FP.6 : Performance Evaluation 2: all possible detector / descriptor combinations were implemented to test how would be the TTC values and I found that TTC lidar values were in most cases better and reliable that the camera ones. Also I found that shitomasi, harris, and ORB detectors had the worst performance with camera TTC estimation, whereas, In the other side, the FAST, BRISK and SIFT detectors performed very well with both camera and lidar TTCs. the file "results.txt" contain all the tests values and by comparing all results, the best three combinations in terms of reliability, accuracy, and limited difference between TTC values from different sensors are:
 	1. SIFT,FREAK
