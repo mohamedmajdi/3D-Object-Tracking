@@ -5,9 +5,13 @@
 2. FP.2 : Compute Lidar-based TTC: I make a help function called "sortLidarX" to first sort the values of points so that I could use the median to calculate the TTC as It is more robust than the mean when it comes to outliers.
 3. FP.3 : Associate Keypoint Correspondences with Bounding Boxes: I first checked if the matches keypoints is contained into the box, then I took into consideration all keypoints inside the bounding boxes and store them in "matchings" and calculate dist to filter out those points by the mean distance then finally stored the filtered points into the kptMatches.
 4. FP.4 : Compute Camera-based TTC: firstly I looped over all matches and collect  current keypoints, then I looped again to get the next keypoints, then I calculated the median of  distance ratios to compute the TTC.
-5. FP.5 : Performance Evaluation 1: in general the lidar TTC values have ranged from nearly 8.3 to 14 but as can be seen in the two images, some outliers rarely appeared causing some errors in the estimation and they need a more detailed filteration process : 
+5. FP.5 : Performance Evaluation 1: in general the lidar TTC values have ranged from nearly 8.3 to 14 but as can be seen in the visualizations, some outliers rarely appeared causing some errors in the estimation and they need a more detailed filteration process : 
 <img src="results/lidar_1_error_TTC.jpg" />
 <img src="results/lidar_2_error_TTC.jpg"  />
+
+
+https://github.com/mohamedmajdi/3D-Object-Tracking/assets/69417860/9a56aaf6-2aeb-4070-ace4-6fb6b45d3356
+
 
 6. FP.6 : Performance Evaluation 2: all possible detector / descriptor combinations were implemented to test how would be the TTC values and I found that TTC lidar values were in most cases better and reliable that the camera ones. Also I found that shitomasi, harris, and ORB detectors had the worst performance with camera TTC estimation, whereas, In the other side, the FAST, BRISK and SIFT detectors performed very well with both camera and lidar TTCs. the file "results.txt" contain all the tests values and by comparing all results, the best three combinations in terms of reliability, accuracy, and limited difference between TTC values from different sensors are:
 	1. SIFT,FREAK
