@@ -1,5 +1,11 @@
-# 3D Object Tracking project
-##  Work done during the project
+# Table of contents
+
+- [Work done during 3D Object Tracking project](#work-done-during-3d-object-tracking-project)
+- [Overview of SFND 3D Object Tracking project](#overview-of-sfnd-3d-object-tracking-project)
+- [Dependencies for Running Locally](#dependencies-for-running-locally)
+- [Basic Build Instructions](#basic-build-instructions)
+
+##  Work done during 3D Object Tracking project
 
 1. FP.1 : Match 3D Objects : to match the bounding boxes, I looped over bounding boxes in previuos frame then make sure that each of "matches" keypoints is existed in the box in both previous and current frame and based on that I would increase the number within "count" by one then after looping finish, I would choose the best math based on "count" value.
 2. FP.2 : Compute Lidar-based TTC: I make a help function called "sortLidarX" to first sort the values of points so that I could use the median to calculate the TTC as It is more robust than the mean when it comes to outliers.
